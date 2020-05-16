@@ -198,8 +198,7 @@ window.addEventListener('load', function () {
                 }
             }
 
-            // Create the planetary background depending on level.
-            //loadPlanetLevel(level); 
+
             levelUp = false; 
         }
         
@@ -290,10 +289,7 @@ window.addEventListener('load', function () {
                     bullets.push(new Bullet(tank.x + 30, tank.y, -8, 2, 12, "#ccff33", false)); 
                 }
 
-                if (sound) {
-                    // Play shoot sound.
-                    soundFx.shoot.play(); 
-                }
+              // todo: play sound
             }
 
             // Update all bullets position inside the canvas.
@@ -354,10 +350,7 @@ window.addEventListener('load', function () {
                             h: exSprite.y
                         });
 
-                        if (sound) {
-                            // Play explosion sound.
-                            soundFx.explosion.play(); 
-                        }
+						// todo: play sound
                     }
                 }
 
